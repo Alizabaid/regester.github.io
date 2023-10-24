@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: red;
+            border: 5px solid red;
+            border-radius: 15px;
+            color: white;
+            font-size: 30px;
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+
+let stnd=[]
+
+
+function push(){
+     stnd.push(prompt("enter regestration"))
+     console.log("user regester")
+}
+function login(){
+
+
+let user=prompt("")
+
+for(let i=0; i<stnd.length; i++){
+   if(user ==stnd[i]){
+console.log("found")
+   }
+   else{
+    console.log("user not found")
+   }
+
+}
+
+}
+
+    </script>
+
+      <button onclick="push()">regiter</button>
+      <button onclick="login()">login</button> 
+    
+</body>
+</html>                                                     
